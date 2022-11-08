@@ -92,7 +92,7 @@ class RecipeCard extends HTMLElement {
     time {
       color: #70757A;
       font-size: 12px;
-    }`
+    }`;
     
 
     

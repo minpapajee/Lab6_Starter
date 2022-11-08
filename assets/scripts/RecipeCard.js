@@ -136,54 +136,6 @@ class RecipeCard extends HTMLElement {
     //           do not nest an <article> inside another <article>). You should use Template
     //           literals (tempalte strings) and element.innerHTML for this.
 
-  //   // first img
-  //   let imageE1 = document.createElement('img');
-  //   imageE1.src = data.imgSrc;
-  //   imageE1.alt = data.imgAlt;
-
-  //   // title
-  //   let title = document.createElement('p');
-  //   title.className = "title";
-  //   let tLink = document.createElement('a');
-  //   tLink.href = data.titleLnk;
-  //   tLink.innerText = data.titleTxt;
-  //   title.appendChild(tLink);
-
-  //   // organization
-  //   let organization = document.createElement('p');
-  //   organization.className = "organization";
-  //   organization.innerText = data.organization;
-
-  //   // rating
-  //   let rating =  document.createElement('p');
-  //   rating.className = 'rating';
-  //   let rSpan = document.createElement('span');
-  //   rSpan.innerText = data.rating;
-  //   let rImg = document.createElement('img');
-  //   rImg.src = `/assets/images/icons/${data.rating}-star.svg`;
-  //   rImg.alt = `${data.rating} stars`;
-  //   let rSpan2 = document.createElement('span');
-  //   rSpan2.innerText = data.numRatings;
-  //   rating.appendChild(rSpan);
-  //   rating.appendChild(rImg);
-  //   rating.appendChild(rSpan2);
-
-  //   // time
-  //   let time = document.createElement('time');
-  //   time.innerText = data.lengthTime;
-  
-  //   // ingredients
-  //   let ingredients = document.createElement('p');
-  //   ingredients.className = "ingredients";
-  //   ingredients.innerText = data.ingredients;
-
-  //   // append to article
-  //   articleE1.appendChild(imageE1);
-  //   articleE1.appendChild(title);
-  //   articleE1.appendChild(organization);
-  //   articleE1.appendChild(rating);
-  //   articleE1.appendChild(time);
-  //   articleE1.appendChild(ingredients);
   articleE1.innerHTML = `
   <img src=${data.imgSrc} alt=${data.imgAlt}>
   <p class="title">
@@ -192,7 +144,7 @@ class RecipeCard extends HTMLElement {
   <p class="organization">${data.organization}</p>
   <div class="rating">
     <span>${data.rating}</span>
-    <img src="/assets/images/icons/${data.rating}-star.svg" alt="${data.rating} stars">
+    <img src="./assets/images/icons/${data.rating}-star.svg" alt="${data.rating} stars">
     <span>(${data.numRatings})</span>
   </div>
   <time>${data.lengthTime}</time>

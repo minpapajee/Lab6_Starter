@@ -150,7 +150,7 @@ class RecipeCard extends HTMLElement {
   <time>${data.lengthTime}</time>
   <p class="ingredients">
     ${data.ingredients}
-  </p>`
+  </p>`;
   }
 
 
